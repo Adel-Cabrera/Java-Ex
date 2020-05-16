@@ -146,7 +146,7 @@ public class PuzzleJava {
 
 
 
-        for (int i = 0; i < 5; i++) {
+        for (int i = 0; i < 10; i++) {
 
             // Se elijen 5 chars al azar y se agregan desde alpha a myChars
             for (int j = 0; j < 5; j++) {
