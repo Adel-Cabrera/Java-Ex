@@ -23,7 +23,7 @@ public class PuzzleJava {
         float sum = IntStream.of(arr).sum();
         System.out.println(String.format("Sum is %.0f", sum));
 
-        ArrayList<Integer> numbers = new ArrayList<Integer>();
+        ArrayList<Integer> numbers = new ArrayList<>();
         for (int value : arr) {
             if (value > 10) {
                 numbers.add(value);
@@ -33,8 +33,8 @@ public class PuzzleJava {
     }
 
     public static ArrayList<String> shuffleNames() {
-        ArrayList<String> names = new ArrayList<String>(Arrays.asList("Nancy", "Jinichi", "Fujibayashi", "Momochi", "Ishikawa"));
-        ArrayList<String> newNames = new ArrayList<String>();
+        ArrayList<String> names = new ArrayList<>(Arrays.asList("Nancy", "Jinichi", "Fujibayashi", "Momochi", "Ishikawa"));
+        ArrayList<String> newNames = new ArrayList<>();
 
         Collections.shuffle(names);
 
@@ -54,7 +54,7 @@ public class PuzzleJava {
             alpha[i] = (char) (97 + i);
         }
 
-        ArrayList<Character> charList = new ArrayList<Character>();
+        ArrayList<Character> charList = new ArrayList<>();
         for (char c : alpha) {
             charList.add(c);
         }
@@ -86,7 +86,7 @@ public class PuzzleJava {
     }
 
     public static ArrayList<Integer> getRandomNumbers() {
-        ArrayList<Integer> nums = new ArrayList<Integer>();
+        ArrayList<Integer> nums = new ArrayList<>();
 
         for (int i = 0; i <= 10; i++) {
             int rand = 5 + (int) (Math.random() * ((100 - 55) + 1));
@@ -98,7 +98,7 @@ public class PuzzleJava {
     }
 
     public static ArrayList<Integer> getRandomNumbers(boolean sorted) {
-        ArrayList<Integer> nums = new ArrayList<Integer>();
+        ArrayList<Integer> nums = new ArrayList<>();
 
         for (int i = 0; i <= 10; i++) {
             int rand = 5 + (int) (Math.random() * ((100 - 55) + 1));
@@ -113,8 +113,8 @@ public class PuzzleJava {
 
     public static String createRandomChars() {
         char[] alpha = new char[26];
-        ArrayList<Character> myChars = new ArrayList<Character>();
-        String listString = "";
+        ArrayList<Character> myChars = new ArrayList<>();
+        StringBuilder listString = new StringBuilder();
 
         for (int i = 0; i < 26; i++) {
             alpha[i] = (char) (97 + i);
@@ -126,19 +126,19 @@ public class PuzzleJava {
         }
 
         for (Character s : myChars) {
-            listString += s;
+            listString.append(s);
         }
 
 
-        return listString;
+        return listString.toString();
 
     }
 
     public static ArrayList<String> createRandomChars(boolean chained) {
         char[] alpha = new char[26];
-        ArrayList<Character> myChars = new ArrayList<Character>();
+        ArrayList<Character> myChars = new ArrayList<>();
         StringBuilder listString = new StringBuilder();
-        ArrayList<String> chainedStrings = new ArrayList<String>();
+        ArrayList<String> chainedStrings = new ArrayList<>();
 
         for (int i = 0; i < 26; i++) {
             alpha[i] = (char) (97 + i);
