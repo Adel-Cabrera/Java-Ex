@@ -1,4 +1,4 @@
-package ssl;
+package sll;
 
 public class Node {
     public int value;

@@ -1,4 +1,4 @@
-package ssl;
+package sll;
 
 public class SinglyLinkedList {
     public Node head;
@@ -8,7 +8,6 @@ public class SinglyLinkedList {
     //Los metodos de la SLL van aqui. Al principio, les mostraremos cómo agregar nodos a la lista.
     public void add(int value) {
         Node newNode = new Node(value);
-
         if(head == null) {
             head = newNode;
         } else {
