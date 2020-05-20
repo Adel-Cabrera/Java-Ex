@@ -10,6 +10,7 @@ public class Samurai extends Human {
 
     public void deathBlow(Human human){
         human.setHealth(0);
+        this.counter += 1;
         this.setHealth(this.getHealth() / 2);
     }
 
@@ -18,7 +19,6 @@ public class Samurai extends Human {
     }
 
     public int howMany(){
-        this.counter += 1;
         return this.counter;
     }
 

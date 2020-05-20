@@ -20,6 +20,7 @@ public class HumanTest {
         System.out.println(String.format("%s health: %s", ninja.name, ninja.getHealth()));
         samurai.meditate();
         System.out.println(String.format("%s health: %s", samurai.name, samurai.getHealth()));
+        System.out.println(samurai.howMany());
 
     }
 }
