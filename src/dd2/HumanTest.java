@@ -6,15 +6,20 @@ public class HumanTest {
         Wizard wizard = new Wizard();
         Samurai samurai = new Samurai();
 
-        ninja.attack(wizard);
-        System.out.println(wizard.name + " health: " + wizard.getHealth());
-        samurai.attack(ninja);
-        samurai.attack(ninja);
-        System.out.println(ninja.name + " health: " + ninja.getHealth());
-        wizard.attack(samurai);
-        wizard.attack(samurai);
-        wizard.attack(samurai);
-        System.out.println(samurai.name + " health: " + samurai.getHealth());
+        ninja.stealHealth(samurai);
+        System.out.println(String.format("%s health: %s", samurai.name, samurai.getHealth()));
+        ninja.runAway();
+        System.out.println(String.format("%s health: %s", ninja.name, ninja.getHealth()));
+
+        wizard.heal(samurai);
+        System.out.println(String.format("%s health: %s", samurai.name, samurai.getHealth()));
+        wizard.fireBall(ninja);
+        System.out.println(String.format("%s health: %s", ninja.name, ninja.getHealth()));
+
+        samurai.deathBlow(ninja);
+        System.out.println(String.format("%s health: %s", ninja.name, ninja.getHealth()));
+        samurai.meditate();
+        System.out.println(String.format("%s health: %s", samurai.name, samurai.getHealth()));
 
     }
 }

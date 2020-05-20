@@ -6,6 +6,23 @@ public class Human {
     private int stealth = 3;
     private int health = 100;
 
+    public int getStealth() {
+        return stealth;
+    }
+
+    public void setStealth(int stealth) {
+        this.stealth = stealth;
+    }
+
+
+    public int getIntelligence() {
+        return intelligence;
+    }
+
+    public void setIntelligence(int intelligence) {
+        this.intelligence = intelligence;
+    }
+
     public int getHealth() {
         return health;
     }
